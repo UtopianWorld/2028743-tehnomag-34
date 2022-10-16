@@ -139,13 +139,18 @@
 }
 
 .search-button {
-  width: 20px;
-  height: 20px;
-  margin: 12px 12px 13px 21px;
+  display: inline-flex;
+  align-items: center;
   background-color: #293449;
   opacity: 0.3;
   border-color: transparent;
   cursor: pointer;
+}
+
+.search-icon{
+  width: 20px;
+  height: 20px;
+  margin-left: 21px;
 }
 
 .search-input {
@@ -166,6 +171,7 @@
 }
 
 .enter {
+  display: inline-flex;
   font-family: 'PT Sans';
   font-weight: 700;
   font-size: 14px;
@@ -177,6 +183,11 @@
   color: #fff;
   border-color: transparent;
   cursor: pointer;
+  align-items: center;
+}
+
+.enter-icon{
+  margin-right: 10px;
 }
 
 .nav-list {
@@ -204,16 +215,22 @@
   padding: 20px 0;
 }
 
+.header-controls-icon{
+  
+}
+
 .header-controls-button {
   background-color: #3D546F;
   border-color: transparent;
   cursor: pointer;
   width: 18px;
   line-height: 18px;
-  margin-inline: 25px;
+  display: inline-flex;
+  align-items: center;
+
 }
 
-.button-order{
+.button-order {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -228,11 +245,11 @@
   cursor: pointer;
 }
 
-.catalog{
+.catalog {
   padding-top: 52px;
 }
 
-.card{
+.card {
   display: block;
   text-decoration: none;
   position: relative;
@@ -241,7 +258,7 @@
   border-radius: 2px;
 }
 
-.card-title{
+.card-title {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -250,23 +267,23 @@
   text-transform: uppercase;
 }
 
-.card-yellow{
+.card-yellow {
   background-color: #FFBF47;
 }
 
-.card-blue{
+.card-blue {
   background-color: #3BBCE3;
 }
 
-.card-pink{
+.card-pink {
   background-color: #DC91D8;
 }
 
-.card-green{
-  background-color:#8ED78F;
+.card-green {
+  background-color: #8ED78F;
 }
 
-.catalog-list{
+.catalog-list {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -274,8 +291,8 @@
   gap: 30px;
 }
 
-.card-more{
-  display: inline-block;
+.card-more {
+  display: inline-flex;
   vertical-align: top;
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
@@ -288,7 +305,7 @@
   text-transform: uppercase;
 }
 
-.card-pic{
+.card-pic {
   position: absolute;
   width: 90px;
   height: 90px;
@@ -298,8 +315,14 @@
   border-color: transparent;
 }
 
+.card-icon{
+  flex-shrink: 0;
+  margin-right: 6px;
+}
+
+
 .gallery {
   grid-column: 1/3;
   grid-row: 2/-1;
-  background-color: #C4C4C4;
+  background-image:url(../images/catalog/slayer\ drill.jpg);
 }
