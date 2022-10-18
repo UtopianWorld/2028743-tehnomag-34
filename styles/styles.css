@@ -552,7 +552,7 @@ body {
   background-color: gray;
 }
 
-.goods-list{
+.goods-list {
   gap: 30px;
   display: flex;
   list-style: none;
@@ -563,6 +563,44 @@ body {
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   border-radius: 2px;
+}
+
+.good-button{
+  flex-wrap: wrap;
+}
+.good-bottom {}
+
+
+.good-pic{
+  padding: 27px 27px 14px 27px;
+}
+
+.good-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #293449;
+  text-align: center;
+  padding: 12px 20px;
+}
+
+.good-old-price {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: #A9A9A9;
+}
+
+.good-price {
+  padding: 11px 28px 11px 11px;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  margin-right: 65px;
+  border-radius: 4px;
 }
 
 .form-label {
