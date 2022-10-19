@@ -549,7 +549,16 @@ body {
   padding-right: 26px;
   flex-shrink: 0;
   height: 400px;
-  background-color: gray;
+}
+
+.goods-filter-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  list-style: none;
+  padding: 0px;
 }
 
 .goods-list {
@@ -565,13 +574,14 @@ body {
   border-radius: 2px;
 }
 
-.good-button{
+.good-button {
   flex-wrap: wrap;
 }
+
 .good-bottom {}
 
 
-.good-pic{
+.good-pic {
   padding: 27px 27px 14px 27px;
 }
 
@@ -610,6 +620,7 @@ body {
   line-height: 24px;
   margin-bottom: 8px;
   display: block;
+  text-transform: uppercase;
 }
 
 .slider {
@@ -617,6 +628,23 @@ body {
   background-color: #F7F3EC;
   position: relative;
   border-radius: 4px;
+}
+
+.form-price-field {
+  height: 40px;
+  width: 95px;
+  box-sizing: border-box;
+  background-color: #F7F3EC;
+  border: 0;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.form-price-field::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #293449;
 }
 
 .slider-track {

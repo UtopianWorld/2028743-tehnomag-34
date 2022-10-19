@@ -265,19 +265,84 @@
       <h2 class="h2">ПЕРФОРАТОРЫ</h2>
       <div class="goods-grid">
         <aside class="goods-aside">
-            <div class="form-control">
+          <div class="form-control">
+            <label for="" class="form-label">
+              Цена
+            </label>
+
+            <div class="slider">
+              <div class="slider-track">
+                <div style="left: 0; right: 20%;" class="slider-track-active"></div>
+              </div>
+              <button style="left: 10px;" type="type" class="slider-button"></button>
+              <button style="left: 70%;" type="type" class="slider-button"></button>
+            </div>
+          </div>
+          <input class="form-price-field" id="price" name="quantity" placeholder="0">
+          -
+          <input class="form-price-field" id="price" name="quantity" placeholder="3000">
+          <section class="catalog-goods">
+            <h3 class="visually-hidden"> Список товаров с фильтрами</h3>
+            <form class="goods-filter" action="https://echo.htmlacademy.ru/" metod="get">
               <label for="" class="form-label">
-                ЦЕНА
+                Производители
               </label>
 
-              <div class="slider">
-                <div class="slider-track">
-                  <div style="left: 0; right: 20%;" class="slider-track-active"></div>
-                </div>
-                <button style="left: 10px;" type="type" class="slider-button"></button>
-                <button style="left: 70%;" type="type" class="slider-button"></button>
-              </div>
-            </div>
+              <ul class="goods-filter-list">
+                <li class="goods-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="BOSCH" checked>
+                    BOSCH
+                  </label>
+                </li>
+                <li class="goods-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="ИНТЕРСКОЛ">
+                    ИНТЕРСКОЛ
+                  </label>
+                </li>
+                <li class="goods-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="MAKIta" checked>
+                    MAKIta
+                  </label>
+                </li>
+                <li class="goods-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Dewalt">
+                    Dewalt
+                  </label>
+                </li>
+                <li class="goods-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Hitachi">
+                    Hitachi
+                  </label>
+                </li>
+              </ul>
+
+              <label for="" class="form-label">
+                Питание
+              </label>
+                <ul class="goods-filter-list">
+                  <li class="goods-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="Аккумуляторные" checked>
+                      Аккумуляторные
+                    </label>
+                  </li>
+                  <li class="goods-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="Сетевые">
+                      Сетевые
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <button class="button button-large button-primary-outline" type="submit">Показать</button>
+            </form>
+          </section>
         </aside>
 
         <div class="goods-content">
@@ -292,7 +357,8 @@
               <div class="good new">
                 <div class="good-top">
                   <a href="#" class="good-link">
-                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg" alt="Перфоратор BOSCH BFG 3000">
+                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg"
+                      alt="Перфоратор BOSCH BFG 3000">
                   </a>
                   <div class="good-button">
                     <button type="button" class="button button-medium button-primary">КУПИТЬ</button>
@@ -317,7 +383,8 @@
               <div class="good">
                 <div class="good-top">
                   <a href="#" class="good-link">
-                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-6000.svg" alt="Перфоратор BOSCH BFG 3000">
+                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-6000.svg"
+                      alt="Перфоратор BOSCH BFG 3000">
                   </a>
                   <div class="good-button">
                     <button type="button" class="button button-medium button-primary">КУПИТЬ</button>
@@ -342,7 +409,8 @@
               <div class="good new">
                 <div class="good-top">
                   <a href="#" class="good-link">
-                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-6000.svg" alt="Перфоратор BOSCH BFG 3000">
+                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-6000.svg"
+                      alt="Перфоратор BOSCH BFG 3000">
                   </a>
                   <div class="good-button">
                     <button type="button" class="button button-medium button-primary">КУПИТЬ</button>
@@ -367,7 +435,8 @@
               <div class="good">
                 <div class="good-top">
                   <a href="#" class="good-link">
-                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-6000.svg" alt="Перфоратор BOSCH BFG 3000">
+                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-6000.svg"
+                      alt="Перфоратор BOSCH BFG 3000">
                   </a>
                   <div class="good-button">
                     <button type="button" class="button button-medium button-primary">КУПИТЬ</button>
@@ -392,7 +461,8 @@
               <div class="good new">
                 <div class="good-top">
                   <a href="#" class="good-link">
-                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg" alt="Перфоратор BOSCH BFG 3000">
+                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg"
+                      alt="Перфоратор BOSCH BFG 3000">
                   </a>
                   <div class="good-button">
                     <button type="button" class="button button-medium button-primary">КУПИТЬ</button>
@@ -417,7 +487,8 @@
               <div class="good">
                 <div class="good-top">
                   <a href="#" class="good-link">
-                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg" alt="Перфоратор BOSCH BFG 3000">
+                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg"
+                      alt="Перфоратор BOSCH BFG 3000">
                   </a>
                   <div class="good-button">
                     <button type="button" class="button button-medium button-primary">КУПИТЬ</button>
@@ -442,7 +513,8 @@
               <div class="good new">
                 <div class="good-top">
                   <a href="#" class="good-link">
-                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg" alt="Перфоратор BOSCH BFG 3000">
+                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg"
+                      alt="Перфоратор BOSCH BFG 3000">
                   </a>
                   <div class="good-button">
                     <button type="button" class="button button-medium button-primary">КУПИТЬ</button>
@@ -467,7 +539,8 @@
               <div class="good">
                 <div class="good-top">
                   <a href="#" class="good-link">
-                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg" alt="Перфоратор BOSCH BFG 3000">
+                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg"
+                      alt="Перфоратор BOSCH BFG 3000">
                   </a>
                   <div class="good-button">
                     <button type="button" class="button button-medium button-primary">КУПИТЬ</button>
@@ -492,7 +565,8 @@
               <div class="good new">
                 <div class="good-top">
                   <a href="#" class="good-link">
-                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg" alt="Перфоратор BOSCH BFG 3000">
+                    <img class="good-pic" width="216" height="180" src="./images/catalog/bfg-3000.svg"
+                      alt="Перфоратор BOSCH BFG 3000">
                   </a>
                   <div class="good-button">
                     <button type="button" class="button button-medium button-primary">КУПИТЬ</button>
