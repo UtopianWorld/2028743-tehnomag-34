@@ -604,6 +604,20 @@ body {
   color: #A9A9A9;
 }
 
+.box-price{
+  display: flex;
+  font: 16px/24px PT sans, sans-serif;
+  color: #FFFFFF;
+}
+
+.box-price::after{
+  content: "";
+  border: 12px solid #EE3643;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right: 0;
+}
+
 .good-price {
   padding: 11px 28px 11px 11px;
   width: 140px;
@@ -611,6 +625,7 @@ body {
   text-align: center;
   margin-right: 65px;
   border-radius: 4px;
+
 }
 
 .form-label {
@@ -621,6 +636,19 @@ body {
   margin-bottom: 8px;
   display: block;
   text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.form-price {
+  display: flex;
+}
+
+.form-price-title {
+  color: #293449;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  margin-inline: 12px;
 }
 
 .slider {
