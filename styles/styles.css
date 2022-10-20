@@ -562,10 +562,11 @@ body {
 }
 
 .goods-list {
-  gap: 30px;
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .goods-list-item {
@@ -574,15 +575,23 @@ body {
   border-radius: 2px;
 }
 
+.good-top{
+
+}
 .good-button {
   flex-wrap: wrap;
+
 }
 
-.good-bottom {}
+.good-bottom {
+padding-left: 65px;
+padding-top: 9px;
+padding-bottom: 25px;
+}
 
 
 .good-pic {
-  padding: 27px 27px 14px 27px;
+
 }
 
 .good-title {
@@ -591,8 +600,7 @@ body {
   line-height: 26px;
   color: #293449;
   text-align: center;
-  padding: 12px 20px;
-}
+  }
 
 .good-old-price {
   font-weight: 700;
@@ -606,7 +614,7 @@ body {
 
 .box-price{
   display: flex;
-  font: 16px/24px PT sans, sans-serif;
+  font: 16px/24px "PT Sans", sans-serif;
   color: #FFFFFF;
 }
 
@@ -623,9 +631,7 @@ body {
   width: 140px;
   height: 40px;
   text-align: center;
-  margin-right: 65px;
   border-radius: 4px;
-
 }
 
 .form-label {
