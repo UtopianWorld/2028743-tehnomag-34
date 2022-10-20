@@ -280,6 +280,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .button-primary {
@@ -297,6 +298,7 @@ body {
 
 .button-primary-outline {
   border: 1px solid #63A63E;
+  background-color: #fff;
   color: #000;
 }
 
@@ -457,7 +459,7 @@ body {
 }
 
 .card {
-  padding: 20px 165px 33px 25px;
+  padding: 20px 130px 33px 25px;
   position: relative;
   display: block;
   text-decoration: none;
@@ -551,6 +553,10 @@ body {
   height: 400px;
 }
 
+.goods-content {
+  flex-grow: 1;
+}
+
 .goods-filter-list {
   font-weight: 400;
   font-size: 14px;
@@ -566,32 +572,69 @@ body {
   list-style: none;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .goods-list-item {
+  width: 33.333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.good {
+  padding: 27px 27px 25px 27px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   border-radius: 2px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.good-top{
-
-}
-.good-button {
-  flex-wrap: wrap;
-
+.good-top {
+  position: relative;
+  margin-bottom: 14px;
+  flex-shrink: 0;
 }
 
 .good-bottom {
-padding-left: 65px;
-padding-top: 9px;
-padding-bottom: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
+.good-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, .9);
+  padding: 16px 45px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.good:hover .good-nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+.good-button:not(:last-child) {
+  margin-bottom: 10px;
+}
 
 .good-pic {
-
+  width: 216px;
+  height: 180px;
+  display: block;
+  object-fit: contain;
 }
 
 .good-title {
@@ -600,38 +643,51 @@ padding-bottom: 25px;
   line-height: 26px;
   color: #293449;
   text-align: center;
-  }
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 11px;
+  text-decoration: none;
+}
 
 .good-old-price {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  letter-spacing: 2px;
   text-decoration-line: line-through;
   text-transform: uppercase;
   color: #A9A9A9;
-}
-
-.box-price{
-  display: flex;
-  font: 16px/24px "PT Sans", sans-serif;
-  color: #FFFFFF;
-}
-
-.box-price::after{
-  content: "";
-  border: 12px solid #EE3643;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  border-right: 0;
+  margin-bottom: 9px;
 }
 
 .good-price {
-  padding: 11px 28px 11px 11px;
-  width: 140px;
-  height: 40px;
   text-align: center;
+  overflow: hidden;
+  padding-right: 13px;
+  margin-top: auto;
+}
+
+.good-price-button {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  border-radius: 4px 0 0 4px;
+  height: 40px;
+  isolation: isolate;
+}
+
+.good-price-button:after {
+  content: ' ';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: inherit;
   border-radius: 4px;
+  top: -1px;
+  right: -13px;
+  transform: rotate(45deg);
+  z-index: -1;
 }
 
 .form-label {
@@ -705,4 +761,60 @@ padding-bottom: 25px;
   position: absolute;
   top: 50%;
   margin-top: -10px;
+}
+
+
+.control{
+  display: flex;
+  align-items: center;
+}
+
+.control-input{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.control-input:checked ~ .control-checkbox:not(.control-radio){
+  background: #fff url(../images/catalog/checker.svg) no-repeat left 4px center;
+}
+
+.control-checkbox{
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 2px;
+  border: 2px solid #3D546F;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.control:hover{
+  opacity: .6;
+}
+
+.control:active{
+  opacity: .2;
+}
+
+.control-input:disabled ~ .control-checkbox{
+  opacity: .5;
+}
+
+.control-radio{
+  border-radius: 50%;
+  background-color: #3D546F;
+  box-shadow: inset 0 0 0 20px #fff;
+}
+
+.control-input:checked ~ .control-radio{
+  box-shadow: inset 0 0 0 5px #fff;
 }
