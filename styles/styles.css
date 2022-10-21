@@ -557,6 +557,15 @@ body {
   flex-grow: 1;
 }
 
+.select {
+  width: 280px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #293449;
+  margin-bottom: 30px;
+}
+
 .goods-filter-list {
   font-weight: 400;
   font-size: 14px;
@@ -565,6 +574,10 @@ body {
   color: #000000;
   list-style: none;
   padding: 0px;
+}
+
+.goods-filter-item {
+  margin-bottom: 22px;
 }
 
 .goods-list {
@@ -656,6 +669,17 @@ body {
   text-align: center;
   letter-spacing: 2px;
   text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: #A9A9A9;
+  margin-bottom: 9px;
+}
+
+.good-old-prices {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #A9A9A9;
   margin-bottom: 9px;
@@ -764,12 +788,12 @@ body {
 }
 
 
-.control{
+.control {
   display: flex;
   align-items: center;
 }
 
-.control-input{
+.control-input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -782,11 +806,11 @@ body {
   overflow: hidden;
 }
 
-.control-input:checked ~ .control-checkbox:not(.control-radio){
+.control-input:checked~.control-checkbox:not(.control-radio) {
   background: #fff url(../images/catalog/checker.svg) no-repeat left 4px center;
 }
 
-.control-checkbox{
+.control-checkbox {
   width: 20px;
   height: 20px;
   display: block;
@@ -797,24 +821,24 @@ body {
   margin-right: 15px;
 }
 
-.control:hover{
+.control:hover {
   opacity: .6;
 }
 
-.control:active{
+.control:active {
   opacity: .2;
 }
 
-.control-input:disabled ~ .control-checkbox{
+.control-input:disabled~.control-checkbox {
   opacity: .5;
 }
 
-.control-radio{
+.control-radio {
   border-radius: 50%;
   background-color: #3D546F;
   box-shadow: inset 0 0 0 20px #fff;
 }
 
-.control-input:checked ~ .control-radio{
+.control-input:checked~.control-radio {
   box-shadow: inset 0 0 0 5px #fff;
 }
